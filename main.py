@@ -100,7 +100,6 @@ def flat_generator(list_of_lists):
                 yield ret_val
             except StopIteration:
                 if not last_flag:
-                    last_flag = True
                     yield entity
 
                 iter_stack.pop()
